@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAWIN</title>
+    <style>
+      .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .whatsapp-btn img {
+        width: 40px;
+        height: 40px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="../assets/imgs/ima.png" class="h-14" alt="Flowbite Logo" />
+          <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BERACA INDUSTRIA GRAFICA</span> -->
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >IMAWIN : Imagine , Innovate , Win</a
+              >
+            </li>
+            <!-- Botón de Instagram -->
+            <li>
+              <a
+                href="https://www.instagram.com/imawin_1/"
+                target="_blank"
+                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                <svg
+                  class="w-6 h-6 fill-current text-white hover:text-blue-600 dark:text-white dark:hover:text-blue-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.326 3.608 1.3.974.974 1.238 2.241 1.3 3.608.058 1.265.07 1.646.07 4.85s-.012 3.585-.07 4.85c-.062 1.366-.326 2.633-1.3 3.608-.974.974-2.241 1.238-3.608 1.3-1.265.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.326-3.608-1.3-.974-.974-1.238-2.241-1.3-3.608-.058-1.265-.07-1.646-.07-4.85s.012-3.585.07-4.85c.062-1.366.326-2.633 1.3-3.608.974-.974 2.241-1.238 3.608-1.3 1.265-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.67.014-4.947.073-1.43.064-2.707.334-3.756 1.384-1.049 1.049-1.32 2.326-1.384 3.756-.059 1.277-.073 1.688-.073 4.947s.014 3.67.073 4.947c.064 1.43.334 2.707 1.384 3.756 1.049 1.049 2.326 1.32 3.756 1.384 1.277.059 1.688.073 4.947.073s3.67-.014 4.947-.073c1.43-.064 2.707-.334 3.756-1.384 1.049-1.049 1.32-2.326 1.384-3.756.059-1.277.073-1.688.073-4.947s-.014-3.67-.073-4.947c-.064-1.43-.334-2.707-1.384-3.756-1.049-1.049-2.326-1.32-3.756-1.384-1.277-.059-1.688-.073-4.947-.073zm0 5.838a6.163 6.163 0 100 12.326 6.163 6.163 0 000-12.326zm0 10.163a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.879 0 1.44 1.44 0 012.879 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+
+    <div class="flex justify-center">
+      <video
+        class="w-120 h-80 border border-gray-200 rounded-lg dark:border-gray-700"
+        controls
+        autoplay
+        muted
+        playsinline
+      >
+        <source
+          src="../assets/imgs/WhatsApp Video 2024-10-28 at 10.01.46.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <br />
+
+    <br />
+
+    <h1 style="text-align: center">Imawin</h1>
+
+    <h5 style="text-align: center">
+      La Plataforma que conecta a Jugadores, Clubes, Manager y Directores
+      Tecnicos
+    </h5>
+
+    <br />
+
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Tarjeta 1 -->
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Facilidad
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Crea tu perfil en un click y alcanza tus sueños
+            </p>
+            <!-- <a href="https://wa.me/5491130080048?text=Hola%20me%20interesa%20saber%20más%20sobre%20Identidad%20Corporativa" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Quiero saber más
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a> -->
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Diseño de Perfil automatico
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Desarrollamos el perfil automaticamente con un diseño único y
+              atractivo
+            </p>
+            <!-- <a href="https://wa.me/5491130080048?text=Hola%20me%20interesa%20saber%20más%20sobre%20Diseño%20de%20Marca" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Quiero saber más
+          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a> -->
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Se parte de otro caso de éxito y cumpli tu sueño
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              No pierdas la oportunidad y registrate para ser parte de Imawin
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <br />
+
+    <div
+      class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 max-w-4xl mx-auto"
+    >
+      <div class="md:w-1/2">
+        <h1 style="color: black">Sobre Nosotros</h1>
+        <p class="tracking-widest text-gray-500 md:text-lg dark:text-gray-400">
+          En IMAWIN, creemos en el poder de los sueños y en el potencial de cada
+          jugador, entrenador, manager y club que forma parte del mundo del
+          fútbol. Nuestra plataforma nace con la visión de conectar a todos
+          aquellos que comparten una pasión por este deporte, facilitando el
+          camino desde el nivel amateur hasta el profesional.
+        </p>
+      </div>
+
+      <div class="md:w-1/2">
+        <img
+          class="h-auto max-w-xs rounded-lg"
+          src="../assets/imgs/ima1.jpg"
+          alt="Descripción de la imagen"
+        />
+      </div>
+    </div>
+
+    <br />
+
+    <br />
+
+    <div
+  class="flex flex-col md:flex-row justify-center items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 max-w-4xl mx-auto"
+>
+  <div class="md:w-1/2">
+    <img
+      class="h-auto max-w-xs rounded-lg"
+      src="../assets/imgs/ima33.jpg"
+      alt="Descripción de la imagen"
+    />
+  </div>
+
+  <div class="md:w-1/2 text-center md:text-left">
+    <h1 style="color: black">Nuestra Misión</h1>
+    <p class="tracking-widest text-gray-500 md:text-lg dark:text-gray-400">
+      Nuestra misión en IMAWIN es romper barreras, brindar oportunidades y crear un espacio
+      donde el talento y la dedicación sean reconocidos, permitiendo a cada
+      miembro de nuestra comunidad dar el próximo paso en su carrera y
+      alcanzar sus metas.
+    </p>
+  </div>
+</div>
+
+
+    <br />
+
+
+
+
+
+    <br />
+
+    <!-- Footer -->
+    <footer class="bg-[#1F2937] shadow py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <img
+            src="../assets/imgs/icono.1-removebg-preview.ico"
+            class="h-16"
+            alt="Atenea Software Logo"
+          />
+          <span class="ml-2 text-white">Atenea Software</span>
+        </div>
+        <div class="text-white">
+          © 2023 Atenea Software. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/@themesberg/flowbite@1.4.7/dist/flowbite.bundle.js"></script>
+  </body>
+</html>
